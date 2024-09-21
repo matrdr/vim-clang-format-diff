@@ -6,9 +6,11 @@ vim9script
 
 # License:      This file is placed in the public domain.
 
+import autoload '../autoload/SetPreviousBuffersSyntax.vim'
+
 command ClangFormatDiff
 	\ diffthis | vnew +read\ ++edit\ !clang-format\ # | :0d _
 	\ | diffthis | setlocal buftype=nofile bufhidden=hide
 	\ noswapfile |
-	\ call g:SetPreviousBuffersSyntax#SetPreviousBuffersSyntax()
+	\ call SetPreviousBuffersSyntax.SetPreviousBuffersSyntax()
 	\ | wincmd p

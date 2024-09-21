@@ -6,7 +6,7 @@ vim9script
 
 # License:      This file is placed in the public domain.
 
-def g:SetPreviousBuffersSyntax#SetPreviousBuffersSyntax()
+export def SetPreviousBuffersSyntax()
 	const previousBufNumber = winbufnr(winnr('#'))
 	const previousBufInfo = getbufinfo(previousBufNumber)
 
