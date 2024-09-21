@@ -18,6 +18,9 @@ the split buffer retains syntax highlighting (I had to learn vim script extra
 for that feature 😆).
 
 # Install
+**ATTENTION**: If you use are still using vim 8.2 (e.g. the one delivered with
+Ubuntu 2204), use the plugin version on the tag `legacy`.
+
 Download or `git clone` this repository into the `~/.vim/pack/*/start/` or the
 `~/.vim/pack/*/opt/` directory (on Windows it is usually
 `%USERPROFILE%\vimfiles` instead of `~/.vim`).
